@@ -66,7 +66,7 @@ const functionConfirm = (codeT, reff, ID) =>
     const data = {
       truecaller: false,
       code: codeT,
-      country_code: nope === "id" ? "+62" : "+1",
+      country_code: "+62",
       device_id: ID,
       device_type: "android",
       email: UsernameGenerator.generateUsername() + "@gmail.com",
