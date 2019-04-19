@@ -133,7 +133,7 @@ const genDevId = length =>
   const code = await readline.question("Masukan kode otp : ");
   const reff = await readline.question("Masukan refferal : ");
   const confirm = await functionConfirm(code, reff, genId);
-  console.log(confirm);
+
   console.log(
     "[" +
       " " +
