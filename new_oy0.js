@@ -134,15 +134,38 @@ const genDevId = length =>
   const reff = await readline.question("Masukan refferal : ");
   const confirm = await functionConfirm(code, reff, genId);
 
-  console.log(
-    "[" +
-      " " +
-      moment().format("HH:mm:ss") +
-      " " +
-      "]" +
-      " " +
-      "Sukses register with name :" +
-      " " +
-      confirm.first_name
-  );
+  if (confirm.first_name !== undefined) {
+    console.log(
+      "[" +
+        " " +
+        moment().format("HH:mm:ss") +
+        " " +
+        "]" +
+        " " +
+        "Sukses register with name :" +
+        " " +
+        confirm.first_name
+    );
+  } else {
+    console.log(
+      "[" +
+        " " +
+        moment().format("HH:mm:ss") +
+        " " +
+        "]" +
+        " " +
+        "Failed Register "
+    );
+    console.log(
+      "[" +
+        " " +
+        moment().format("HH:mm:ss") +
+        " " +
+        "]" +
+        " " +
+        "Message :" +
+        " " +
+        confirm
+    );
+  }
 })();
