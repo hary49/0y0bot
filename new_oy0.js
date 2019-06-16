@@ -8,7 +8,7 @@ const UsernameGenerator = require("username-generator");
 const ua = require("useragent-generator");
 
 console.log("#####################");
-console.log("Panggil w Amin Tamvan");
+console.log("HARY SETIABUDI");
 console.log("#####################");
 
 console.log("");
